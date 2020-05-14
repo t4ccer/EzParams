@@ -14,3 +14,6 @@ void Main(string args)
 Parser works using Finite State Machine(graph below).  
 
 ![](fsm.png)
+
+## Contribution
+Feel free to add some features or fix bugs
