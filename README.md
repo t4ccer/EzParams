@@ -10,6 +10,8 @@ void Main(string args)
         .WithDefaultHelpParameter(out bool help);
 }
 ```
+To use in Your code just install [t4ccer.EzParams](https://www.nuget.org/packages/t4ccer.EzParams/) nuget package
+
 ## Parsing
 Parser works using Finite State Machine(graph below).  
 
