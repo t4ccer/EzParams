@@ -26,7 +26,7 @@ jobs:
         run: dotnet build -c Release Src/t4ccer.EzParams
       
       - name: Pack
-        run: dotnet pack -c Release -p:Version=${{ steps.next_version.outputs.version }} -o nuget -properties CustomAuthor="t4ccer" Src/t4ccer.EzParams
+        run: dotnet pack -c Release -p:Version=${{ steps.next_version.outputs.version }} -o nuget -p:Authors="t4ccer" Src/t4ccer.EzParams
       
       - name: Publish
         run: dotnet nuget push nuget/*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
