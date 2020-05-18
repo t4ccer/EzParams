@@ -10,6 +10,13 @@ namespace t4ccer.EzParams
         List<Parameter> parameters = new List<Parameter>();
         string programName;
 
+
+        public ParamsParser(string[] argsString, string programName = "PROGRAM")
+        {
+            ParseString(string.Join(string.Empty, argsString));
+            this.programName  = programName;
+        }
+
         public ParamsParser(string argsString, string programName = "PROGRAM")
         {
             this.programName = programName;
