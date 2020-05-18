@@ -2,7 +2,7 @@
 Library for easy and fast parsing CLI parameters
 ## Usage
 ```csharp
-void Main(string args)
+void Main(string[] args)
 {
     new ParamsParser(args)
         .WithParameter(out string param1, "--param1", "-p1", "Description", "DefaultValue")
